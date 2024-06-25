@@ -3,6 +3,7 @@ import PageContainer from './page-container'
 import { HeaderNavigation } from './header-navigation'
 import ProfileButton from './profile-button'
 import ResponsiveMenu from './responsive-menu'
+import ToogleTheme from './toogle-theme'
 export default function header() {
   return (
     <header className='p-4 border-b'>
@@ -20,7 +21,8 @@ export default function header() {
             <HeaderNavigation/>
 
                 {/* Buttons*/ }
-            <div className='flex items-center'>
+            <div className='flex items-center gap-2'>
+                <ToogleTheme />
                 <ProfileButton/>
             </div>
          </div>
